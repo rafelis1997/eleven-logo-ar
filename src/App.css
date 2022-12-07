@@ -134,6 +134,7 @@ video {
 
 .fireButton {
   position: absolute;
+  opacity: 0;
   left: 50px;
   bottom: 50px;
   z-index: 10000;
