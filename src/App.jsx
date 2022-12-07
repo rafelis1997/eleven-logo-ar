@@ -5,6 +5,7 @@ import 'mind-ar/dist/mindar-image-aframe.prod.js';
 
 import logoSvg from './assets/logo.svg';
 import deathHuntCover from './assets/deathHuntCover.png';
+import targetPath from './assets/targets.mind';
 import './App.css';
 
 function App() {
@@ -61,7 +62,7 @@ function App() {
 
         <a-scene
           ref={sceneRef}
-          mindar-image="uiScanning: #scanUi;imageTargetSrc: ./assets/targets.mind;filterMinCF:0.0001; filterBeta: 0.0001" 
+          mindar-image={`uiScanning: #scanUi;imageTargetSrc: ${targetPath};filterMinCF:0.0001; filterBeta: 0.0001`} 
           color-space="sRGB" 
           renderer="colorManagement: true, physicallyCorrectLights" 
           vr-mode-ui="enabled: false" 
