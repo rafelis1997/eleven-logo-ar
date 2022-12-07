@@ -27,7 +27,6 @@ function App() {
 
     const scanEl = scanUi.current;
 
-
     async function startAR() {
       await arSystem.start();
     }
@@ -47,6 +46,7 @@ function App() {
 
     return async () => {
       await arSystem.stop();
+
       sceneEl.removeEventListener('renderstart', startAR);
       sceneEl.removeEventListener('targetFound', hideScan);
       sceneEl.removeEventListener('targetLost', showScan);
