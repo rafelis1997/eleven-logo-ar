@@ -61,7 +61,7 @@ function App() {
 
         <a-scene
           ref={sceneRef}
-          mindar-image="uiScanning: #scanUi;imageTargetSrc: ./src/assets/targets.mind;filterMinCF:0.0001; filterBeta: 0.0001" 
+          mindar-image="uiScanning: #scanUi;imageTargetSrc: .assets/targets.mind;filterMinCF:0.0001; filterBeta: 0.0001" 
           color-space="sRGB" 
           renderer="colorManagement: true, physicallyCorrectLights" 
           vr-mode-ui="enabled: false" 
@@ -70,7 +70,7 @@ function App() {
         >
           <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
           <a-entity mindar-image-target="targetIndex: 0">
-            <a-gltf-model src="./src/assets/eleven-dragons-logo.glb" rotation="0 0 0 " position="0 -0.5 0.2" scale="0.5 0.5 0.5" animation="property: rotation; to: 0 360 0; dur: 10000; easing: easeInOutQuad; loop: true; dir: alternate"></a-gltf-model>
+            <a-gltf-model src="./assets/eleven-dragons-logo.glb" rotation="0 0 0 " position="0 -0.5 0.2" scale="0.5 0.5 0.5" animation="property: rotation; to: 0 360 0; dur: 10000; easing: easeInOutQuad; loop: true; dir: alternate"></a-gltf-model>
           </a-entity>
         </a-scene>
       </div>
