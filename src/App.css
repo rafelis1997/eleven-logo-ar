@@ -118,25 +118,32 @@ video {
 
 @media (max-width: 768px){
 
+  #scanUi {
+    padding: 1rem;
+  }
+
   #scanUi .scanning {
-      width: 80%;
-      height: 40%;
-      box-sizing: border-box;
+    width: 80%;
+    height: 40%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #scanUi .scanInner {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5rem;
+    padding: 1rem;
   }
 }
 
 .fireButton {
   position: absolute;
   opacity: 0;
-  left: 50px;
-  bottom: 50px;
+  left: 5%;
+  bottom: 5%;
   z-index: 10000;
   background: #ef2400;
   border-radius: 100%;
