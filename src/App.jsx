@@ -69,8 +69,8 @@ function App() {
           </div>
         </div>
 
-        <button onClick={handleSetFire} className="fireButton">
-          <img src={fireIcon} alt="" width={50} height={50}/>
+        <button type="button" onClick={handleSetFire} className="fireButton">
+          <img src={fireIcon} alt="" width={50} height={50} unselectable/>
         </button>
 
         <a-scene

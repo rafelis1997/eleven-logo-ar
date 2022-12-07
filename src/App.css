@@ -160,10 +160,15 @@ video {
 
 .fireButton:active {
   scale: 0.95;
-  transition: scale 0.2s ease;
+  transition: scale 0.05s ease;
   user-select: none;
 }
 
 .fireButton:hover {
   border: 3px solid rgb(223, 208, 10);
+}
+
+.fireButton img {
+  pointer-events: none;
+  user-select: none;
 }
