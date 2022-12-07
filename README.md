@@ -20,3 +20,5 @@ ou
 
 Acessando:
 [Eleven logo AR](https://eleven-logo-ar.vercel.app)
+
+OBS.: Recomendo o uso da imagem impressa em caso de problemas de detecção, também recomendo o acesso pelo celular pra uma melhor experiência 
