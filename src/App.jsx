@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import 'mind-ar/dist/mindar-image.prod.js';
 import 'aframe';
 import 'mind-ar/dist/mindar-image-aframe.prod.js';
+import 'aframe-extras'
 
 import logoSvg from './assets/logo.svg';
 import deathHuntCover from './assets/deathHuntCover.png';
@@ -63,14 +64,14 @@ function App() {
           ref={sceneRef}
           mindar-image={`uiScanning: #scanUi;imageTargetSrc: targets.mind;filterMinCF:0.0001; filterBeta: 0.0001`} 
           color-space="sRGB" 
-          renderer="colorManagement: true, physicallyCorrectLights" 
+          renderer="logarithmicDepthBuffer: true;colorManagement: true, physicallyCorrectLights" 
           vr-mode-ui="enabled: false" 
           device-orientation-permission-ui="enabled: false"
           embedded
         >
           <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
           <a-entity mindar-image-target="targetIndex: 0">
-            <a-gltf-model src="eleven-dragons-logo.glb" rotation="0 0 0 " position="0 -0.5 0.2" scale="0.5 0.5 0.5" animation="property: rotation; to: 0 360 0; dur: 10000; easing: easeInOutQuad; loop: true; dir: alternate"></a-gltf-model>
+            <a-gltf-model animation-mixer="clip: dragonAnim" src="dragon.glb" rotation="0 0 0" position="0 -1.5 0.2" scale="0.5 0.5 0.5" animation="property: rotation; to: 0 360 0; dur: 25000; easing: easeInOutQuad; loop: true; dir: alternate"></a-gltf-model>
           </a-entity>
         </a-scene>
       </div>
