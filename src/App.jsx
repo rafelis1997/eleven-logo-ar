@@ -83,6 +83,8 @@ function App() {
           embedded
         >
           <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+          <a-entity light="type: ambient; color: #BBB; intensity: 1;"></a-entity>
+          <a-entity light="type: directional; color: #d5d822; intensity: 3;" position="-0.5 1 1"></a-entity>
           <a-entity mindar-image-target="targetIndex: 0">
             <a-gltf-model animation-mixer="clip: dragonAnim" src="dragon.glb" rotation="0 90 0" position="-0.5 -1.5 0.2" scale="0.35 0.35 0.35">
             <a-entity 
