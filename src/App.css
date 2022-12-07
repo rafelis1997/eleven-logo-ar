@@ -147,7 +147,7 @@ video {
   border: 3px solid #fff;
   cursor: pointer;
 
-  animation: fadeIn 0.2s ease 2.2s forwards;
+  animation: fadeIn 0.2s ease 2.4s forwards;
 }
 
 .fireButton:active {
