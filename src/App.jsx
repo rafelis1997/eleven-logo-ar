@@ -60,14 +60,14 @@ function App() {
           <img src={logoSvg} alt="logo" />
         </div>
 
-        <div id="scanUi" ref={scanUi}>
+        {/* <div id="scanUi" ref={scanUi}>
           <div className='scanning'>
             <div className='scanInner'>
               <img src={deathHuntCover} alt="" />
               <div className='scanLine'></div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <button onClick={handleSetFire} className="fireButton">
           <img src={fireIcon} alt="" width={50} height={50}/>
@@ -85,7 +85,22 @@ function App() {
           <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
           <a-entity mindar-image-target="targetIndex: 0">
             <a-gltf-model animation-mixer="clip: dragonAnim" src="dragon.glb" rotation="0 90 0" position="-0.5 -1.5 0.2" scale="0.35 0.35 0.35">
-            <a-entity ref={particleFire} position="-0.007 4.409 3.579" rotation="128.569 7.206 0.656" particle-system="maxAge: 3;color: #ef6c00,#ccbe00;blending: 1;size:150; texture: fire_texture.png; enabled: false; duration: 2" material="alphaTest: 0.5"></a-entity>
+            <a-entity 
+              ref={particleFire} 
+              position="-0.007 4.520 4.065" 
+              rotation="128.569 7.206 0.656" 
+              particle-system="maxAge: 3;
+                  color: #ef6c00,#ccbe00;
+                  blending: 1;
+                  size:550; 
+                  sizeSpread: 200;
+                  texture: fire_texture.png;
+                  enabled: false; 
+                  duration: 2; 
+                  rotationAngleSpread: 0.5;
+                  opacitySpread: 0.5" 
+                  material="alphaTest: 0.5"
+              ></a-entity>
             </a-gltf-model>
           </a-entity>
         </a-scene>
