@@ -161,3 +161,7 @@ video {
   scale: 0.95;
   transition: scale 0.2s ease;
 }
+
+.fireButton:hover {
+  border: 3px solid rgb(223, 208, 10);
+}
