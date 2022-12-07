@@ -60,14 +60,14 @@ function App() {
           <img src={logoSvg} alt="logo" />
         </div>
 
-        {/* <div id="scanUi" ref={scanUi}>
+        <div id="scanUi" ref={scanUi}>
           <div className='scanning'>
             <div className='scanInner'>
               <img src={deathHuntCover} alt="" />
               <div className='scanLine'></div>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <button onClick={handleSetFire} className="fireButton">
           <img src={fireIcon} alt="" width={50} height={50}/>
